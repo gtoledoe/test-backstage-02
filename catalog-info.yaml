@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  title: Backend
+  name: api-cajas
+  description: Servicio backend proyecto, ejemplo backstage.
+  links: 
+    - url: https://backend.com
+      title: Backend prod
+      icon: dashboard
+  tags:
+    - nodejs
+    - roble
+  annotations:
+    sonarqube.org/project-key: SISTADMISION-BKOFFCAJAS-ANGULAR
+    jenkins.io/job-full-name: prod:produccion/Roble-Finanzas/api-finanzas
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: backend
+  lifecycle: production
+  owner: trebol-it
+  system: Roble-finanzas  
+  dependsOn:
+    - Component:sample-service-2
+    - Resource:bd-mongo

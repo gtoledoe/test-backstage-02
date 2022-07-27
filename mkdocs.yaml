@@ -1,0 +1,7 @@
+site_name: 'Documentacíon'
+
+nav:
+  - Home: index-02.md
+docs_dir: docs
+plugins:
+  - techdocs-core
